@@ -1,0 +1,21 @@
+header {
+    padding: 50px;
+    background-image: url("../img/hero.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+
+   form {
+       width: 500px;
+   }
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    display: none;
+    &.load {
+        display: block;
+    }
+}
