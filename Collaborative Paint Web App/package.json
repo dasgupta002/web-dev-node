@@ -1,0 +1,15 @@
+{
+  "name": "paint-io",
+  "version": "1.0.0",
+  "description": "a collaborative tool",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "author": "dg002",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "socket.io": "^4.1.2"
+  }
+}
