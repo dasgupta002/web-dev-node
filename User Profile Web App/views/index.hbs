@@ -1,0 +1,10 @@
+<p class = "lead mt-5 mb-2 col-md-6 offset-1">Welcome to User Management Portal!</p>
+<p class = "lead mt-2 mb-5 col-md-6 offset-1">Head over <a style = "text-decoration: none;" href = "/auth/login">here</a> to unpack your dashboard.</p>
+{{#if recent}}
+<h2 class = "lead mt-5 mb-4 col-md-6 offset-1">Recent Loggedin Users</h2>
+<ul class = "list-group lead mt-2 col-md-6 offset-1">
+    {{#each recent}}
+        <li class = "list-group-item"><a style = "text-decoration: none;" href = "/users/{{username}}">{{username}}</a></li>
+    {{/each}}
+</ul>
+{{/if}}

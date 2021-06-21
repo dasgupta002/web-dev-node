@@ -1,0 +1,22 @@
+<h2 class = "lead mt-5 mb-5 col-md-6 offset-1">Update Your Profile</h2>
+{{>messages}}
+<form action = "/users" class = "col-md-6 offset-1" method = "POST">
+   <div class = "form-group">
+       <label class = "form-label lead" for = "userid">Full Name</label>
+       <input type = "text" value = "{{name}}" class = "form-control mb-4" name = "name">
+   </div>
+   <div class = "form-group">
+       <label class = "form-label lead" for = "usergit">Github Home URL</label>
+       <input type = "text" value = "{{github}}" class = "form-control mb-5" name = "github">
+   </div>
+   <div class = "form-group">
+       <label class = "form-label lead" for = "usertweet">Twitter Handle URL</label>
+       <input type = "text" value = "{{twitter}}" class = "form-control mb-5" name = "twitter">
+   </div>
+   <div class = "form-group">
+       <label class = "form-label lead" for = "userfb">Facebook Profile URL</label>
+       <input type = "text" value = "{{facebook}}" class = "form-control mb-5" name = "facebook">
+   </div>
+   <button class = "btn btn-dark w-25">Update</button>
+</form>
+<p class = "lead mt-3 mb-2 col-md-6 offset-1">Already updated? <a style = "text-decoration: none;" href = "/users/{{username}}">View</a> profile here rather!</p>

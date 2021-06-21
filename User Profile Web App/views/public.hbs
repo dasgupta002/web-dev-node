@@ -1,0 +1,22 @@
+{{>messages}}
+{{#if username}}
+<h2 class = "lead mt-5 mb-5 col-md-6 offset-1">{{username}}'s Profile!</h2>
+<table class = "table table-striped w-50 lead offset-1">
+    <tr>
+        <td>Full Name</td>
+        <td>{{name}}</td>
+    </tr>
+    <tr>
+        <td>Github Home</td>
+        <td>{{github}}</td>
+    </tr>
+    <tr>
+        <td>Twitter Handle</td>
+        <td>{{twitter}}</td>
+    </tr>
+    <tr>
+        <td>Facebook Profile</td>
+        <td>{{facebook}}</td>
+    </tr>
+</table>
+{{/if}}

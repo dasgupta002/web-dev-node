@@ -1,0 +1,14 @@
+<h2 class = "lead mt-5 mb-5 col-md-6 offset-1">Register For New User</h2>
+{{>messages}}
+<form action = "/auth/register" class = "col-md-6 offset-1" method = "POST">
+   <div class = "form-group">
+       <label class = "form-label lead" for = "useralias">Username</label>
+       <input type = "text" class = "form-control mb-4" name = "username">
+   </div>
+   <div class = "form-group">
+       <label class = "form-label lead" for = "userkey">Password</label>
+       <input type = "password" class = "form-control mb-5" name = "password">
+   </div>
+   <button class = "btn btn-dark w-25 float-end">Register</button>
+</form>
+<p class = "lead mt-5 mb-5 col-md-6 offset-1">Already registered? <a style = "text-decoration: none;" href = "/auth/login">Login</a> here rather!</p>
