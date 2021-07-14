@@ -27,7 +27,7 @@ export class jobFinder {
                     this.stopLoadSpinner();
                     
                     return results
-                              .map((job) => jobTemplate(job, this.currencySymbol))
+                              .map((job) => jobTemplate(job)
                               .join(""); 
                 })
                 .then((jobs) => this.jobQuery.innerHTML = jobs)
